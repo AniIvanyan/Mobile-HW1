@@ -133,3 +133,8 @@ fun towerOfHanoi(n:Int, fromRod:Char, toRod:Char, auxRod:Char){
     println("Move disk $n from rod $fromRod to rod $toRod")
     towerOfHanoi(n-1, auxRod, toRod, fromRod)
 }
+
+fun onlyForTesting()
+{
+
+}
