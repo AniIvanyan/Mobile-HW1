@@ -10,27 +10,35 @@ import java.util.Scanner
 
 fun main() {
     // task1. Declare an array and a list of your choice, initialize them with values, and print the elements.
-    //task1()
+    println("Here is the task 1")
+    task1()
     // task2. Create a string variable and perform various string manipulations such as concatenation, substring extraction, and changing case, then print the modified string.
-    //task2()
+    println("Here is the task 2")
+    task2()
     //task3. Declare a map with key-value pairs and iterate through it to print both keys and values.
-    //task3()
+    println("Here is the task 3")
+    task3()
     //task4. Write a function that takes an integer as input and returns a string indicating whether it's positive, negative, or zero. Call this function with different integer inputs and print the results.
-    //task4()
+    println("Here is the task 4")
+    task4()
     //task5. Create a program that asks the user for their name and age, then prints a personalized greeting with their name and a message based on their age.
-    //task5()
+    println("Here is the task 5")
+    task5()
     //task6. Write a function that takes two numbers as input and divides them. Implement error handling to handle division by zero and print an appropriate message.
-    //task6()
+    println("Here is the task 6")
+    task6()
     //task7. Get the current date and time, format it, and print it.
-    //task7()
+    println("Here is the task 7")
+    task7()
     //task8. Define a class representing a simple "Person" with properties like name and age. Create an object of this class and print its properties.
-    //task8()
+    println("Here is the task 8")
+    task8()
     //task9. Extend Person class and write a function that takes a person's age as input and returns a string indicating their life stage (e.g., "Child," "Teenager," "Adult”).
-    //task9()
+    println("Here is the task 9")
+    task9()
     //task10. Declare a list of integers and use a lambda function to filter and print only the even numbers from the list.
-    //task10()
-    //Tower of Hanoi
-    towerOfHanoi(3, 'A', 'C', 'B')
+    println("Here is the task 10")
+    task10()
 }
 
 fun task1() {
@@ -47,7 +55,7 @@ fun task2() {
     val upperString = string.uppercase()
     println("Original string: $string")
     println("Substring: $substring")
-    println("Uppercase String: $upperString")
+    println("Uppercase string: $upperString")
 }
 
 fun task3() {
@@ -119,22 +127,4 @@ fun task10() {
     var intList = listOf(1, 5, 6, 8, 15, 20, 14, 7)
     intList = intList.filter { it % 2 == 0 }
     println("Only even elements of a list: ${intList.joinToString()}")
-}
-
-
-//Tower of Hanoi problem
-
-fun towerOfHanoi(n:Int, fromRod:Char, toRod:Char, auxRod:Char){
-    if (n == 1){
-        println("Move disk 1 from $fromRod to rod $toRod")
-        return
-    }
-    towerOfHanoi(n-1, fromRod, auxRod, toRod)
-    println("Move disk $n from rod $fromRod to rod $toRod")
-    towerOfHanoi(n-1, auxRod, toRod, fromRod)
-}
-
-fun onlyForTesting()
-{
-
 }
